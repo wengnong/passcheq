@@ -26,7 +26,7 @@ const CheckerPage: React.FC = () => {
         setIsLoading(true);
         setError(null);
 
-        fetch('http://localhost:5000/check-password', {
+        fetch('https://passcheq-production.up.railway.app/check-password', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
