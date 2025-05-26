@@ -89,7 +89,7 @@ const CheckerPage: React.FC = () => {
                         <label htmlFor="password" className="text-lg font-medium">
                             Enter a password to check:
                         </label>
-                        <div className="flex gap-2">
+                        <div className="flex flex-col gap-2">
                             <input
                                 type="text"
                                 id="password"
@@ -107,7 +107,7 @@ const CheckerPage: React.FC = () => {
                             <button
                                 onClick={checkPasswordStrength}
                                 disabled={isLoading}
-                                className={`bg-[#d38951] hover:bg-[#c07845] text-white px-4 py-2 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[#d38951] focus:ring-opacity-50 ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                className={`bg-[#d38951] hover:bg-[#c07845] text-white px-4 py-2 rounded-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[#d38951] focus:ring-opacity-50 cursor-pointer ${isLoading ? 'opacity-70 cursor-not-allowed' : ''}`}
                             >
                                 {isLoading ? 'Checking...' : 'Check'}
                             </button>
